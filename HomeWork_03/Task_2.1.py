@@ -16,10 +16,6 @@ def FindWork(lst):
     temp = 0
     j = math.ceil(len(lst)/2)  # округление значения длины списка до большего
     for i in range(j):
-        if i == 0:
-            temp = lst[i] * lst[-i-1]
-            work.append(temp)
-        else:
             temp = lst[i] * lst[-i-1]
             work.append(temp)
     return work
