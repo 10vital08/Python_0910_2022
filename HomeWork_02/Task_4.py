@@ -10,7 +10,8 @@ for i in range(-n, n+1):
     list.append(i)
 
 # чтение всех строк файла
-f = open("G:\\Python_0910_2022\\HomeWork_02\\file.txt", "r")
+# f = open("G:\\Python_0910_2022\\HomeWork_02\\file.txt", "r")
+f = open("file.txt", "r")
 while True:
     list_2 = f.readlines()
     break
