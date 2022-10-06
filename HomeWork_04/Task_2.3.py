@@ -24,7 +24,7 @@ for i in range(exponent, -1, -1):
     elif i == 1:
         str_x += 'X' + str(temp) + ' + '
     else:
-        str_x += str(temp) + ' '
+        str_x += str(temp) + ' = 0'
     string_elements += str_x
 
 f.write(string_elements)
