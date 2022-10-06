@@ -2,7 +2,6 @@
 
 n = int(input('Введите число N = '))
 prime_number = 2
-temp = 2
 list_factor = []
 
 while prime_number != n:
