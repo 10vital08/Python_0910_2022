@@ -10,7 +10,8 @@ while prime_number != n:
         list_factor.append(prime_number)
     else:
         prime_number += 1
-if n == prime_number:
+#if n == prime_number:
+else:
      list_factor.append(prime_number)
    
 print(list_factor)
