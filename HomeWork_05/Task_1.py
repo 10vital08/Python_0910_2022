@@ -9,18 +9,21 @@
 from random import randint, random
 
 
-#key = lambda cand, step: cand % (step + 1)
+key = lambda cand, step: cand % (step + 1)
 
 def Steps_game(f_move, cand, max_steps):
     step_player_1 = 0
     step_player_2 = 0
     winner = 0
+    flag = f_move
 
     print(f'Вам доступны ходы от 0 до {max_steps}')
     while winner != 1 or winner != 2:
         print(f'\nОсталось {cand} конфет')
         # определение, кто ходит первым
-        if f_move == 2:
+        if flag == 2:
+            flag = 1
+        elif f_move == 2:
             step_player_1 = int(input(f"Ход второго игрока = "))
             winner = 2
         else:
@@ -56,6 +59,6 @@ candies = 2021
 max_step = 28
 
 first_move = int(input('Какой игрок ходит первым, 1 или 2? => '))
+print(f'Первому игроку нужно взять {key(candies, max_step)} конфет и далее уравнивать ходы 1 и 2 \
+игроков уравнивать к {max_step + 1}, чтобы гарантировано выиграть')
 print(f'Выиграл {Steps_game(first_move, candies, max_step)} игрок')
-
-#print(key(candies, max_step))
